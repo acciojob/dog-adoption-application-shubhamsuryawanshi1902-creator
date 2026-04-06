@@ -4,9 +4,96 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #219150;
+        }
+    </style>
 </head>
 
 <body>
+	<form>
+		<lebel>Name</lebel>
+		<input type="text" id="name" placeholder="Name">
+		<lebel>Phone Number</lebel>
+		<input type="text" id="phone" placeholder="Phone Number">
+		<lebel>Address</lebel>
+		<input type="text" id="address" placeholder="Address">
+		<lebel>Have you ever lived with a dog before?</lebel>
+		<input id="checkbox" type="checkbox">
+		<lebel>Please select your preferred breeds</lebel>
+		<select id="multiSelect" multiple ></select>
+		<option value="labradog">labrador</option>
+		<option value="beagle">Beagle</option>
+                <option value="poodle">Poodle</option>
+            </select>
+            <small style="color: #7f8c8d;">Hold Ctrl (Cmd) to select multiple</small>
+		
+		<lebel>Submit</lebel>
+		<input id="submit" type="submit">
+			
+		
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
